@@ -5,20 +5,20 @@
 Specification:
 
 <strong>/</strong> :
-Returns health statistics 
-&nbsp;&nbsp;<strong>Query params</strong>:
-&nbsp;&nbsp;&nbsp;&nbsp;year: Number. Example: 2013
-&nbsp;&nbsp;&nbsp;&nbsp;countryCode: String. Example: ARG
+Returns health statistics</br>
+&nbsp;&nbsp;<strong>Query params</strong>:</br>
+&nbsp;&nbsp;&nbsp;&nbsp;year: Number. Example: 2013</br>
+&nbsp;&nbsp;&nbsp;&nbsp;countryCode: String. Example: ARG</br></br>
 
-<strong>Response</strong>:
-&nbsp;&nbsp;total: Number
-&nbsp;&nbsp;valueTotal: Number
-&nbsp;&nbsp;data: Object
-&nbsp;&nbsp;&nbsp;&nbsp;stats: Array
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stat: Object 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seriesCode: String
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seriesName: String
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;countryCode: String
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;countryName: String
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year: Number
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value: Number
+<strong>Response</strong>:</br>
+&nbsp;&nbsp;total: Number</br>
+&nbsp;&nbsp;valueTotal: Number</br>
+&nbsp;&nbsp;data: Object</br>
+&nbsp;&nbsp;&nbsp;&nbsp;stats: Array</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stat: Object</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seriesCode: String</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seriesName: String</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;countryCode: String</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;countryName: String</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year: Number</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value: Number</br>
