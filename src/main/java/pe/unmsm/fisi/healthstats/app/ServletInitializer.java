@@ -1,4 +1,4 @@
-package pe.unmsm.fisi.HealthStatistics;
+package pe.unmsm.fisi.healthstats.app;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
