@@ -11,9 +11,9 @@ Returns health statistics</br>
 &nbsp;&nbsp;&nbsp;&nbsp;countryCode: String. Example: ARG</br></br>
 
 <strong>Response</strong>:</br>
-&nbsp;&nbsp;total: Number</br>
-&nbsp;&nbsp;valueTotal: Number</br>
 &nbsp;&nbsp;data: Object</br>
+&nbsp;&nbsp;&nbsp;&nbsp;total: Number</br>
+&nbsp;&nbsp;&nbsp;&nbsp;valueTotal: Number</br>
 &nbsp;&nbsp;&nbsp;&nbsp;stats: Array</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stat: Object</br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seriesCode: String</br>
