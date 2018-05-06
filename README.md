@@ -1,24 +1,24 @@
 # The World Bank - Health Stats API
 
-## API Endpoint: [https://health-statistics-rest-api.appspot.com/api/v1/stats/health] (https://health-statistics-rest-api.appspot.com/api/v1/stats/health)
+## API Endpoint: https://health-statistics-rest-api.appspot.com/api/v1/stats/health
 
 Specification:
 
 <strong>/</strong> :
 Returns health statistics 
-  <strong>Query params</strong>:
-    year: Number. Example: 2013
-    countryCode: String. Example: ARG
+&nbsp;&nbsp;<strong>Query params</strong>:
+&nbsp;&nbsp;&nbsp;&nbsp;year: Number. Example: 2013
+&nbsp;&nbsp;&nbsp;&nbsp;countryCode: String. Example: ARG
 
-  <strong>Response</strong>:
-    total: Number
-    valueTotal: Number
-    data: Object
-      stats: Array
-        stat: Object 
-          seriesCode: String
-          seriesName: String
-          countryCode: String
-          countryName: String
-          year: Number
-          value: Number
+<strong>Response</strong>:
+&nbsp;&nbsp;total: Number
+&nbsp;&nbsp;valueTotal: Number
+&nbsp;&nbsp;data: Object
+&nbsp;&nbsp;&nbsp;&nbsp;stats: Array
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stat: Object 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seriesCode: String
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seriesName: String
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;countryCode: String
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;countryName: String
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year: Number
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value: Number
