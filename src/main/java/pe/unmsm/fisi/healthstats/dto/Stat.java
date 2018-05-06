@@ -14,7 +14,7 @@ public class Stat implements Serializable {
 	private String seriesCode;
 	private String seriesName;
 	private Double value;
-	private Integer year;
+	private Long year;
 
 	public Stat() {
 	}
@@ -59,11 +59,11 @@ public class Stat implements Serializable {
 		this.value = value;
 	}
 
-	public Integer getYear() {
+	public Long getYear() {
 		return year;
 	}
 
-	public void setYear(Integer year) {
+	public void setYear(Long year) {
 		this.year = year;
 	}
 
