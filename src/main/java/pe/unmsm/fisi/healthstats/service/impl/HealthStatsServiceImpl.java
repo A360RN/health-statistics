@@ -28,7 +28,7 @@ public class HealthStatsServiceImpl implements HealthStatsService {
 		List<Stat> stats = new ArrayList<>();
 		int total = 0;
 		double valueTotal = 0;
-		Iterator<Entity> entityIt = healthStatsDao.getHealthStats(null);
+		Iterator<Entity> entityIt = healthStatsDao.getHealthStats(filters);
 		while(entityIt.hasNext()) {
 			Entity nextEntity = entityIt.next();
 			Stat stat = new Stat();
