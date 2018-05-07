@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>The World Bank - Health Statistics</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" th:href="@{css/styles.css}">
+</head>
+<body>
+
+	<div class="container">
+		<form>
+			<div class="row input-container">
+				<div class="col-4">
+					<label for="seriesCode">Indicador:</label> 
+					<select class="form-control" id="seriesCode" name="seriesCode">
+						<option value="0">Ninguno</option>
+						<option value="SH.DYN.AIDS">Personas mayores de 15 años, viviendo con VIH</option>
+						<option value="SP.DYN.SMAM.MA">Edad promedio de hombres, en su primer matrimonio</option>
+						<option value="SP.DYN.SMAM.FE">Edad promedio de mujeres, en su primer matrimonio</option>
+						<option value="SH.STA.DIAB.ZS">Prevalencia de diabetes (%poblacion entre 25 y 79 años)</option>
+						<option value="SH.MED.BEDS.ZS">Camas de hospital (por cada 1000 personas)</option>
+						<option value="SH.TBS.INCD">Incidencia de TBC (por cada 100000 personas)</option>
+						<option value="SP.DYN.LE00.IN">Expectativa de vida al nacer (en años)</option>
+					</select>
+				</div>
+				<div class="col-4">
+					<label for="countryCode">País:</label>
+					<select class="form-control" id="countryCode" name="countryCode">
+						<option value="0">Ninguno</option>
+						<option value="ARG">Argentina</option>
+						<option value="BOL">Bolivia</option>
+						<option value="BRA">Brasil</option>
+						<option value="CHL">Chile</option>
+						<option value="COL">Colombia</option>
+						<option value="ECU">Ecuador	</option>
+						<option value="PRY">Paraguay</option>
+						<option value="PER">Peru</option>
+						<option value="URY">Uruguay</option>
+						<option value="VEN">Venezuela</option>
+					</select>
+				</div>
+				<div class="col-4">
+					<button id="btnSearch" class="btn btn-primary">Buscar</button>
+				</div>
+			</div>
+		</form>
+		
+		<div class="row">
+			<div id="table-container" class="col-6">
+			
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script th:src="@{js/data.js}"></script>
+</body>
+</html>
