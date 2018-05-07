@@ -9,16 +9,17 @@ Returns health statistics</br>
 &nbsp;&nbsp;<strong>Query params</strong>:</br>
 &nbsp;&nbsp;&nbsp;&nbsp;year: Number. Example: 2013</br>
 &nbsp;&nbsp;&nbsp;&nbsp;countryCode: String. Example: ARG</br></br>
+&nbsp;&nbsp;&nbsp;&nbsp;seriesCode: String. Example: SH.DYN.AIDS</br></br>
 
-<strong>Response</strong>:</br>
-&nbsp;&nbsp;data: Object</br>
-&nbsp;&nbsp;&nbsp;&nbsp;total: Number</br>
-&nbsp;&nbsp;&nbsp;&nbsp;valueTotal: Number</br>
-&nbsp;&nbsp;&nbsp;&nbsp;stats: Array</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stat: Object</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seriesCode: String</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seriesName: String</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;countryCode: String</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;countryName: String</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year: Number</br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value: Number</br>
+&nbsp;&nbsp;<strong>Response</strong>:</br>
+&nbsp;&nbsp;&nbsp;&nbsp;data: Object</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;total: Number</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;valueTotal: Number</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stats: Array</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stat: Object</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seriesCode: String</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;seriesName: String</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;countryCode: String</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;countryName: String</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;year: Number</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value: Number</br>
