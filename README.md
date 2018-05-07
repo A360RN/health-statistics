@@ -8,7 +8,7 @@ Specification:
 Returns health statistics</br>
 &nbsp;&nbsp;<strong>Query params</strong>:</br>
 &nbsp;&nbsp;&nbsp;&nbsp;year: Number. Example: 2013</br>
-&nbsp;&nbsp;&nbsp;&nbsp;countryCode: String. Example: ARG</br></br>
+&nbsp;&nbsp;&nbsp;&nbsp;countryCode: String. Example: ARG</br>
 &nbsp;&nbsp;&nbsp;&nbsp;seriesCode: String. Example: SH.DYN.AIDS</br></br>
 
 &nbsp;&nbsp;<strong>Response</strong>:</br>
