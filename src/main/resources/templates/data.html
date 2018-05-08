@@ -48,8 +48,18 @@
 		</form>
 		
 		<div class="row">
-			<div id="table-container" class="col-6">
-			
+			<div class="col-6">
+				<button id="btnGeneralReport" class="btn btn-secondary">Ver Reporte General</button>
+			</div>
+			<div class="col-6">
+				<button id="btnChart" class="btn btn-secondary">Ver Cuadro</button>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div id="table-container" class="col-6"></div>
+			<div hidden id="chart-container" class="col-6">
+				<canvas id="chart" width="600" height="600"></canvas>
 			</div>
 		</div>
 	</div>
@@ -57,6 +67,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script
 		src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script th:src="@{js/lib/Chart.min.js}"></script>
 	<script th:src="@{js/data.js}"></script>
 </body>
 </html>

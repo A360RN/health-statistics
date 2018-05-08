@@ -91,5 +91,10 @@ hs_err_pid*
 ## ignoring target file
 target/
 
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
 
 # End of https://www.gitignore.io/api/java,eclipse,java-web
