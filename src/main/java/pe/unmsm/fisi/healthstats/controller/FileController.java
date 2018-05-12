@@ -2,6 +2,7 @@ package pe.unmsm.fisi.healthstats.controller;
 
 import java.util.Iterator;
 
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -43,18 +44,22 @@ public class FileController {
 				String countryCode = currentRow.getCell(3).getStringCellValue();
 				String countryName = currentRow.getCell(2).getStringCellValue();
 				for(int i = 2005; i <= 2013; i++) {
-					double value = currentRow.getCell(i-2001).getNumericCellValue();
-					int year = i;
-					Key newKey = datastore.allocateId(keyFactory.newKey());
-					Entity newStat = Entity.newBuilder(newKey)
-							.set("seriesCode", seriesCode)
-							.set("seriesName", seriesName)
-							.set("countryCode", countryCode)
-							.set("countryName", countryName)
-							.set("year", year)
-							.set("value", value)
-							.build();
-					datastore.put(newStat);
+					if (currentRow.getCell(i-2001).getCellTypeEnum() == CellType.STRING) {
+					} else if(currentRow.getCell(i-2001).getCellTypeEnum() == CellType.NUMERIC){
+						double value = currentRow.getCell(i-2001).getNumericCellValue();
+						int year = i;
+						Key newKey = datastore.allocateId(keyFactory.newKey());
+						Entity newStat = Entity.newBuilder(newKey)
+								.set("seriesCode", seriesCode)
+								.set("seriesName", seriesName)
+								.set("countryCode", countryCode)
+								.set("countryName", countryName)
+								.set("year", year)
+								.set("value", value)
+								.build();
+						datastore.put(newStat);
+					}
+
 				}
 				rows++;
 			}
